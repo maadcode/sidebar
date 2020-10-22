@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="header__toggle">
+            <i class='bx bx-menu' id="header-toggle"></i>
+        </div>
+
+        <div class="header__social-media">
+            <ul>
+                <li><a href="https://codepen.io/maadcode/"><i class='bx bxl-codepen'></i></a></i></li>
+                <li><a href="https://github.com/maadcode"><i class='bx bxl-github'></i></a></li>
+                <li><a href="https://twitter.com/maadcode"><i class='bx bxl-twitter'></i></a></i></li>
+            </ul>
+        </div>
+
+        <div class="header__img">
+            <img src="assets/person.jpeg" alt="">
+        </div>
+    </header>
+
+    <div class="l-navbar" id="nav-bar">
+        <nav class="nav">
+            <div>
+                <a href="#" class="nav__logo">
+                    <i class='bx bxs-happy-beaming nav__logo-icon'></i>
+                    <span class="nav__logo-name">Maadcode</span>
+                </a>
+
+                <div class="nav__list">
+                    <a href="#git" class="nav__link active">
+                    <i class='bx bxl-git nav__icon'></i>
+                        <span class="nav__name">Git</span>
+                    </a>
+
+                    <a href="#installation" class="nav__link">
+                        <i class='bx bxs-download nav__icon'></i>
+                        <span class="nav__name">Installation</span>
+                    </a>
+
+                    <a href="#commands" class="nav__link">
+                        <i class='bx bx-git-repo-forked nav__icon'></i>
+                        <span class="nav__name">Commands</span>
+                    </a>
+                </div>
+            </div>
+
+            <a href="#" class="nav__link">
+                <i class='bx bxl-github nav__icon'></i>
+                <span class="nav__name">Github</span>
+            </a>
+        </nav>
+    </div>
+
+    <main>
+        <div class="title">
+            <h1>Git</h1>
+        </div>
+
+        <section id="git">
+            <h2>Que es Git y para que sirve?</h2>
+            <p>Git es una herramienta creada por Linus Torvalds que te ayuda a controlar las versiones de un proyecto, el cual guarda un historial de los cambios realizados. Algunos beneficios que no brinda Git son los siguientes :</p>
+            <ul>
+                <li>Repositorio distribuido</li>
+                <li>No requiere conexión a Internet</li>
+                <li>Integridad de datos</li>
+                <li>Fomenta la colaboración debido al Open Source</li>
+            </ul>
+        </section>
+
+        <section id="installation">
+            <h2>Como instalar Git?</h2>
+
+            <div class="installation__post">
+                <h3>En Windows</h3>
+                <p>Para instalar git en Windows puedes usar el instalador que se descarga en la página <a href="https://git-scm.com/downloads">git.scm.com</a></p>
+            </div>
+
+            <div class="installation__post">
+                <h3>En Mac</h3>
+                <p>Para instalar git en macOS existen 2 opciones. En primer lugar, usar la interfaz gráfica del <a href="https://sourceforge.net/projects/git-osx-installer/">instalador de la página sourceforge.net</a>. Por otro lado, puedes instalar <a href="https://brew.sh/">homebrew</a> para tener disponible el siguiente comando :</p>
+                <code>$ brew install git</code>
+            </div>
+
+            <div class="installation__post">
+                <h3>En Linux</h3>
+                <p>Para instalar Git en un Sistema Operativo basado en Linux, deberás abrir la terminal y colocar el siguiente comando :</p>
+                <code>sudo apt-get install git</code>
+            </div>
+        </section>
+
+        <section id="commands">
+            <h2>Los comandos básicos en git</h2>
+            <p>Existen tres secciones principales en un proyecto con Git, en los cuales se gestionan los cambios :</p>
+            <ul>
+                <li>Working Directory</li>
+                <li>Staging Área</li>
+                <li>Git Directory o Repositorio</li>
+            </ul>
+
+            <div class="command__post">
+                <h3>Iniciar git en un proyecto - Git init</h3>
+                <p>El comando "git init" sirve iniciar git en un repositorio o proyecto nuevo.</p>
+            </div>
+
+            <div class="command__post">
+                <h3>Agregar al stage - Git Add</h3>
+                <p>Un commit es cada uno de los cambios realizados en el historial de git.</p>
+                <p>Para agregar los archivos con los cambios deberá colocar el siguiente comando : </p>
+                <code>git add .</code>
+            </div>
+
+            <div class="command__post">
+                <h3>Agregar al working - Git Commit</h3>
+                <p>Un commit es cada uno de los cambios realizados en el historial de git.</p>
+                <p>Para agregar un commit deberá colocar el siguiente comando : </p>
+                <code>git commit -m "Este es mi primer commit"</code>
+            </div>
+
+            <div class="command__post">
+                <h3>Conectar mi proyecto a un repositorio remoto - Git Remote</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, est! Distinctio sapiente eos harum vel.</p>
+                <p>Para conectarse a un repositorio remote deberá colocar el siguiente comando : </p>
+                <code>git remote add <span>url</span></code>
+            </div>
+
+            <div class="command__post">
+                <h3>Subir mis cambios a mi repositorio - Git Push</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, est! Distinctio sapiente eos harum vel.</p>
+                <p>Para agregar un commit deberá colocar el siguiente comando : </p>
+                <code>git push</code>
+            </div>
+
+            <div class="command__post">
+                <h3>Bajar los cambios subidos a mi repositorio - Git Pull</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, est! Distinctio sapiente eos harum vel.</p>
+                <p>Para agregar un commit deberá colocar el siguiente comando : </p>
+                <code>git pull</code>
+            </div>
+
+            <div class="command__post">
+                <h3>Clonar repositorio - Git Clone</h3>
+                <p>Un clon es una copia exacta de un repositorio.</p>
+                <p>Para agregar un commit deberá colocar el siguiente comando : </p>
+                <code>git clone <span>url</span></code>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
